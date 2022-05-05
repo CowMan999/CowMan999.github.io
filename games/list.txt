@@ -2,3 +2,4 @@ tetris
 astrophobia
 rhythmic
 snake++
+picosearch
