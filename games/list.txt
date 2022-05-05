@@ -3,4 +3,3 @@ astrophobia
 rhythmic
 snake++
 picosearch
-rufus
