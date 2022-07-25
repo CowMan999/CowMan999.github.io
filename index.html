@@ -1,18 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-  
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022882051382007"
-     crossorigin="anonymous"></script>
-  
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="timeline.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	
-  <a href="E-MAY Launcher.exe" download>Download E-MAY Launcher</a>
+<body class="black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="./images/logo.png" style="width:100%">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#timeline" class="bar-item button padding-large hover-black">
+    <i class="fa fa-sitemap xxlarge"></i>
+    <p>TIMELINE</p>
+  </a>
+  <a href="#skills" class="bar-item button padding-large hover-black">
+    <i class="fa fa-code xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="#statistics" class="bar-item button padding-large hover-black">
+    <i class="fa fa-pie-chart xxlarge"></i>
+    <p>STATISTICS</p>
+  </a>
+  <a href="#projects" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+
   
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#timeline" class="bar-item button" style="width:25% !important">TIMELINE</a>
+    <a href="#skills" class="bar-item button" style="width:25% !important">SKILLS</a>
+    <a href="#statistics" class="bar-item button" style="width:25% !important">STATISTICS</a>
+    <a href="#projects" class="bar-item button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container padding-32 center black" id="home">
+    <h1 class="jumbo rotate-text"><span class="hide-small">I'm</span> Edward Mayen.</h1>
+    <p>Software Engineer/Game Developer/High School Nerd</p>
+  </header>
+
+  <center><img src="images/logo.png" class="hide-large hide-medium" width="256px" height="256px"></center>
+
+  <!-- About Section -->
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">About Me</h2>
+    <hr style="width:200px" class="opacity">
+    <p>I am a 15 year old aspiring student at <a href="https://www2.peelschools.org/schools/portcredit/Pages/default.aspx">PCSS</a>, In the
+		<a href="https://www2.peelschools.org/schools/portcredit/programs/sci-tech/Pages/default.aspx">SciTech reigonal program.</a> I enjoy programming, science, 
+		mathematics and other such topics.
+    </p>
+
+
+  <!-- Timeline -->
+  <div class="content justify text-grey padding-64" id="timeline">
+    <h2 class="text-light-grey">Timeline</h2>
+    <hr style="width:200px" class="opacity">
+	<div class="t-timeline">
+
+		<div class="t-container t-left">
+			<div class="t-content">
+			  <h2>As far back as 2017</h2>
+			  <p>This is when I had started programming, making incredibly simple projects in Python and Scratch.</p>
+			</div>
+		  </div>
+
+
+		  <div class="t-container t-right">
+			<div class="t-content">
+			  <h2>2019 - June 2020</h2>
+			  <p>I had become better at Scratch, and made a lot of goofy games.
+				(You can check them out <a href="https://scratch.mit.edu/users/cs3507550/">here</a>, although they are really bad)
+			  </p>
+			</div>
+		  </div>
+
+		<div class="t-container t-left">
+		  <div class="t-content">
+			<h2>July 2020 - 2021</h2>
+			<p>I had discovered a game engine much more powerful than Scratch, albeit still block based. It was <a href="https://gdevelop.io/">GDevelop.</a> It had many features
+			(compared to Scratch) and was easy to use. And so, I made many games on it, and saved a few available <a href="gdeveloplinks.html">here<a>.</p>
+		  </div>
+		</div>
+
+		<div class="t-container t-right">
+			<div class="t-content">
+			  <h2>January 2021</h2>
+			  <p>I looked into other non block-based game engines, and found Unity, a powerful engine that also supports 3D games. I had decided to give it a shot, and made a game
+				based loosly off of a <a href="https://brackeys.com/">Brakeys</a> tutorial.</p>
+			</div>
+		  </div>
+  
+
+		<div class="t-container t-left">
+		  <div class="t-content">
+			<h2>January - Febuary 2021</h2>
+			<p>I had sort of given up on Unity, as it was complicated for me coming from block based editors, so I had desided to keep improving with Python and develop desktop apps with Tkinter.</p>
+		  </div>
+		</div>
+
+		<div class="t-container t-right">
+			<div class="t-content">
+			  <h2>March - June 2021</h2>
+			  <p>I had mustered up the courage to give Unity another go, and this time kept going with it. I ended up making a bunch of games, and participating in two game jams during 
+				this period.
+			  </p>
+			</div>
+		  </div>
+
+		<div class="t-container t-left">
+			<div class="t-content">
+			  <h2>June - September 2021</h2>
+			  <p>I know this is like a rollercoaster, but I had then swiched back to Python. This is the time where I had worked with and learned the most about Python. I made many programs and things using GUI libraries and other things, and became reletivley good with the language.</p>
+			</div>
+		  </div>
+
+		<div class="t-container t-right">
+		  <div class="t-content">
+			<h2>September 2021</h2>
+			<p>I wanted to try somthing new, as Python was mainly for webservers and ML, yet I wasn't using it for either. So I decided to pick up C++, as it was 
+				right up the alley of desktop apps and video games. I got myself a copy of MinGW and started developing simple C++ apps. I also picked up and compiled my 
+				first C++ library, <a href="https://www.sfml-dev.org/">SFML</a>, and created some of my first native grapical applications.
+			</p>
+		  </div>
+		</div>
+
+		<div class="t-container t-left">
+			<div class="t-content">
+			  <h2>November 2021</h2>
+			  <p>I wanted to learn how to make native GUI apps using a typical GUI library, and learned about and compiled <a href="https://www.wxwidgets.org/">WxWidgets</a>.
+			  </p>
+			</div>
+		  </div>
+
+		  <div class="t-container t-right">
+			<div class="t-content">
+			  <h2>December 2021 - Today</h2>
+			  <p>I kept on improving my C++ skils, and will continue to do so into the forseeable future. I learned a lot about other topics as well, 
+				such as NASM, ML, Linux distributions, the POSIX standard, image processing, webservers, platform independant programming, game design concepts, 
+				physics symulations among a multitude of other things. I made a ton of projects/games/applications over this timeline (easly 150+)
+				and had a lot of fun doing so. I plan to contine programming, and learn more as I go.
+			  </p>
+			</div>
+		  </div>
+
+
+	  </div> 
+
+	  <div class="content justify text-grey padding-64" id="skills">
+		<h2 class="text-light-grey">My Skills</h2>
+		<hr style="width:200px" class="opacity">
+
+    	<p class="wide text-light-blue">Modern C++</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:95%"></div>
+    	</div>
+
+    	<p class="wide text-light-blue">SFML</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:90%"></div>
+    	</div>
+
+		<p class="wide text-light-blue">Python</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:85%"></div>
+    	</div>
+
+		<p class="wide text-light-blue">Dear ImGui</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:83%"></div>
+    	</div>
+
+    	<p class="wide text-light-blue">Genann</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:80%"></div>
+    	</div>
+
+    	<p class="wide text-light-blue">WxWidgets</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:75%"></div>
+    	</div>
+	
+    	<p class="wide text-light-blue">Unity</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:65%"></div>
+    	</div>
+
+    	<p class="wide text-light-blue">C#</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:55%"></div>
+    	</div>
+
+		<p class="wide text-light-blue">HTML and CSS</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:35%"></div>
+    	</div>
+
+		<p class="wide text-light-blue">OpenGL</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:15%"></div>
+    	</div>
+
+		<p class="wide text-light-blue">NASM and OS development</p>
+    	<div class="dark-grad">
+    	  <div class="light-grad" style="height:28px;width:5%"></div>
+    	</div>
+	</div>
+
+	<div class="content justify text-grey padding-64" id="statistics">
+		<h2 class="text-light-grey">My Statistics</h2>
+		<hr style="width:200px" class="opacity">
+
+		<div class="row center padding-16 section light-grey">
+    	  <div class="quarter section">
+    	    <span class="xlarge">150+</span><br>
+    	    Projects
+    	  </div>
+    	  <div class="quarter section">
+    	    <span class="xlarge">24+</span><br>
+    	    Months programming
+    	  </div>
+    	  <div class="quarter section">
+    	    <span class="xlarge">7+</span><br>
+    	    Libraries known
+    	  </div>
+    	  <div class="quarter section">
+    	    <span class="xlarge">65000+</span><br>
+    	    Lines of code written
+    	  </div>
+    	</div>
+
+    	<button class="button light-grey padding-large section">
+    	  <i class="fa fa-download"></i> Download Resume
+    	</button>
+	</div>
+    
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="padding-64 content" id="projects">
+    <h2 class="text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="opacity">
+
+    <!-- Grid for photos -->
+    <div class="row-padding" style="margin:0 -16px">
+      <div class="half">
+        <img src="./apps/tetris.png" style="width:100%">
+        <img src="./apps/rhythmic.png" style="width:100%">
+        <img src="./apps/snake++.png" style="width:100%">
+      </div>
+
+      <div class="half">
+        <img src="./apps/astrophobia.png" style="width:100%">
+        <img src="./apps/MMMM.png" style="width:100%">
+        <img src="./apps/picosearch.png" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i>Ontario, Canada</p>
+      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i>edward.mayen@yahoo.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message!</p>
+
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="content padding-64 text-grey xlarge">
+    <p><a href="https://github.com/CowMan999"><i class="fa fa-github hover-opacity xxlarge" style="padding-right: 20px;"></i>My github </a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
