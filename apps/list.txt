@@ -1,6 +1,0 @@
-MMMM
-tetris
-astrophobia
-rhythmic
-snake++
-picosearch
