@@ -15,11 +15,12 @@
 <body>
 <div class="page-wrapper">
 <div class="parallax-bg"></div>
+<div class="stripe-bg"></div>
+<div class="parallax-waveform"></div>
 
   <!-- ── NAV ── -->
   <nav>
     <div class="container nav-inner">
-      <a class="nav-logo" href="#hero"><span class="nav-logo-mark"></span> edward.mayen</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about"      class="nav-link">about</a></li>
         <li><a href="#experience" class="nav-link">experience</a></li>
@@ -37,24 +38,33 @@
   <section id="hero">
     <div class="shard shard-right shard-hero-r"></div>
     <div class="shard shard-left shard-hero-l"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-name">Edward<em>Mayen</em></h1>
-        <p class="hero-title">// Computer Engineering @ McMaster · Embedded Systems · RTL / Hardware Verification </p>
-        <p class="hero-desc">
-          I build systems where hardware and software meet — RTL designs verified in Vivado,
-          embedded firmware running on custom PCBs, and control systems tuned in the field.
-          B.Eng Computer Engineering candidate at McMaster University, based in Mississauga, Ontario.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h8"/></svg>
-            View Projects
-          </a>
-          <a href="#contact" class="btn-ghost">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Get in Touch
-          </a>
+    <div class="container" style="max-width:1360px;">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-name">Edward<em>Mayen</em></h1>
+          <p class="hero-title">$ Computer Engineering @ McMaster<br>Embedded Systems · RTL / Hardware Verification </p>
+          <p class="hero-desc">
+            I build systems where hardware and software meet — RTL designs verified in Vivado,
+            embedded firmware running on custom PCBs, and control systems tuned in the field.
+            B.Eng Computer Engineering candidate at McMaster University, based in Mississauga, Ontario.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h8"/></svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-media reveal reveal-delay-1">
+          <div class="hero-img-wrap">
+            <img class="hero-img" src="assets/hero.jpg" alt="Edward Mayen" />
+            <div class="hero-img-placeholder">Add hero.jpg</div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,83 +78,112 @@
     <div class="container">
       <div class="reveal">
         <div class="section-label">About Me</div>
-        <h2 class="section-title">Hardware instincts,<br/>systems thinking.</h2>
+        <h2 class="section-title">Who I am.</h2>
       </div>
+
       <div class="about-grid" style="margin-top:52px">
+
+        <div class="about-media reveal reveal-delay-2">
+          <div class="about-img-wrap">
+            <img class="about-img" src="assets/about.jpg" alt="Edward Mayen" />
+            <div class="about-img-placeholder">Add about.jpg</div>
+          </div>
+        </div>
+
         <div class="about-text reveal reveal-delay-1">
           <p>
             I'm <strong>Edward Mayen</strong>, a Computer Engineering student at
             <strong>McMaster University</strong> (Class of 2029, 4.0 GPA), based in Mississauga, Ontario.
-            My work sits at the boundary between circuits and code — RTL design, embedded firmware,
+		  </p><p>
+			Outside of engineering, I’m happiest staying active and exploring. I love hiking, playing volleyball and basketball, and getting outside whenever I can.</p>
+			
+			<p>
+				I’ve also always had a habit of taking things apart just to understand how they work—then usually putting them back together into something of my own. Whether it’s a new project, a broken gadget, or an idea I can’t stop thinking about, I enjoy figuring things out and making things.
+		  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════ SKILLS ══════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">What I work with.</h2>
+          <p>
+			My work sits at the boundary between circuits and code — RTL design, embedded firmware,
             PCB layout, and control systems.
-          </p>
+          </p><br>
           <p>
             On the hardware side I design PCBs in Altium and KiCad, write SystemVerilog RTL and
             testbenches verified in Vivado, and debug with an oscilloscope and multimeter when things
             don't behave the way the schematic says they should. On the software side I work across
             C/C++, Python, Java, and TypeScript — from bare-metal firmware to data pipelines.
-          </p>
+          </p><br>
           <p>
             I'm currently a member of <strong>McMaster Baja Racing's</strong> Data Acquisition team,
             and previously served as president and software lead of a competitive robotics team that
             qualified for Ontario Provincials twice.
           </p>
-          <div class="about-highlight">
-            <p>// good embedded engineering means understanding both the datasheet and the deadline.</p>
+        </p>
+      </div>
+
+      <div class="skills-wrap reveal reveal-delay-2" style="margin-top:44px">
+        <div>
+          <div class="skill-group-title">// HDL &amp; Digital Design</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Verilog</span>
+            <span class="skill-tag">SystemVerilog</span>
+            <span class="skill-tag">Vivado</span>
+            <span class="skill-tag">RTL Design</span>
+            <span class="skill-tag">Testbench Development</span>
           </div>
         </div>
-        <div class="skills-wrap reveal reveal-delay-2">
-          <div>
-            <div class="skill-group-title">// HDL &amp; Digital Design</div>
-            <div class="skill-tags">
-              <span class="skill-tag">Verilog</span>
-              <span class="skill-tag">SystemVerilog</span>
-              <span class="skill-tag">Vivado</span>
-              <span class="skill-tag">RTL Design</span>
-              <span class="skill-tag">Testbench Development</span>
-            </div>
+        <div>
+          <div class="skill-group-title">// Embedded Systems</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">Teensy</span>
+            <span class="skill-tag">PID Control</span>
+            <span class="skill-tag">I²C / SPI / CAN Bus</span>
           </div>
-          <div>
-            <div class="skill-group-title">// Embedded Systems</div>
-            <div class="skill-tags">
-              <span class="skill-tag">Arduino</span>
-              <span class="skill-tag">ESP32</span>
-              <span class="skill-tag">Teensy</span>
-              <span class="skill-tag">PID Control</span>
-              <span class="skill-tag">I²C / SPI / CAN Bus</span>
-            </div>
+        </div>
+        <div>
+          <div class="skill-group-title">// Electronics</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Signal Analysis</span>
+            <span class="skill-tag">Oscilloscope</span>
+            <span class="skill-tag">Multimeter</span>
+            <span class="skill-tag">Altium Designer</span>
+            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">PCB Design &amp; Debug</span>
+            <span class="skill-tag">Simulink</span>
           </div>
-          <div>
-            <div class="skill-group-title">// Electronics</div>
-            <div class="skill-tags">
-              <span class="skill-tag">Signal Analysis</span>
-              <span class="skill-tag">Oscilloscope</span>
-              <span class="skill-tag">Multimeter</span>
-              <span class="skill-tag">Altium Designer</span>
-              <span class="skill-tag">KiCad</span>
-              <span class="skill-tag">PCB Design &amp; Debug</span>
-              <span class="skill-tag">Simulink</span>
-            </div>
-          </div>
-          <div>
-            <div class="skill-group-title">// Software</div>
-            <div class="skill-tags">
-              <span class="skill-tag">C / C++</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">Linux CLI</span>
-              <span class="skill-tag">Bash</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">CMake</span>
-              <span class="skill-tag">GCC</span>
-              <span class="skill-tag">SQL</span>
-            </div>
+        </div>
+        <div>
+          <div class="skill-group-title">// Software</div>
+          <div class="skill-tags">
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Linux CLI</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">CMake</span>
+            <span class="skill-tag">GCC</span>
+            <span class="skill-tag">SQL</span>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <div class="section-divider"></div>
 
@@ -157,7 +196,28 @@
       </div>
       <div class="exp-list" style="margin-top:52px">
 
-        <div class="exp-card reveal">
+
+        <div class="exp-card reveal ">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="exp-role">Hardware Validation & Test Engineering Co-op</div>
+              <div class="exp-org">HealthHub Solutions <span class="exp-loc">· Milton, ON</span></div>
+            </div>
+            <div class="exp-date">Jun 2025 — Aug 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Diagnosed and repaired defective bedside patient entertainment systems by replacing and resoldering internal PCB components.</li>
+            <li>Tested repaired units and verified functionality against structured validation procedures prior to redeployment.</li>
+            <li>Flashed and modified onboard Linux-based firmware to keep devices on current, compatible software builds.</li>
+            <li>Used custom electrical test jigs, oscilloscopes, and multimeters to isolate and verify functionality of individual internal components.</li>
+            <li>Wrote a Python script to automate testing of channel banks on a coax-based distribution system, streamlining QA across many units.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="card-tag">PCB Repair</span><span class="card-tag">Soldering</span><span class="card-tag">Linux Firmware</span><span class="card-tag">Oscilloscope</span><span class="card-tag">Python</span><span class="card-tag">QA</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal reveal-delay-1">
           <div class="exp-header">
             <div class="exp-left">
               <div class="exp-role">Data Acquisition Member</div>
@@ -176,25 +236,6 @@
           </div>
         </div>
 
-        <div class="exp-card reveal reveal-delay-1">
-          <div class="exp-header">
-            <div class="exp-left">
-              <div class="exp-role">Electronics Repair Technician</div>
-              <div class="exp-org">HealthHub Solutions <span class="exp-loc">· Milton, ON</span></div>
-            </div>
-            <div class="exp-date">Jun 2025 — Aug 2025</div>
-          </div>
-          <ul class="exp-bullets">
-            <li>Diagnosed and repaired defective bedside patient entertainment systems by replacing and resoldering internal PCB components.</li>
-            <li>Tested repaired units and verified functionality against structured validation procedures prior to redeployment.</li>
-            <li>Flashed and modified onboard Linux-based firmware to keep devices on current, compatible software builds.</li>
-            <li>Used custom electrical test jigs, oscilloscopes, and multimeters to isolate and verify functionality of individual internal components.</li>
-            <li>Wrote a Python script to automate testing of channel banks on a coax-based distribution system, streamlining QA across many units.</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="card-tag">PCB Repair</span><span class="card-tag">Soldering</span><span class="card-tag">Linux Firmware</span><span class="card-tag">Oscilloscope</span><span class="card-tag">Python</span><span class="card-tag">QA</span>
-          </div>
-        </div>
 
         <div class="exp-card reveal reveal-delay-2">
           <div class="exp-header">
@@ -257,9 +298,12 @@
         </div>
 
         <!-- ── UART TX/RX Core ── -->
-        <div class="project-card reveal reveal-delay-1">
+        
+		<div class="project-card reveal reveal-delay-1">
           <div class="card-img-wrap corner-frame">
+			<a href="https://github.com/CowMan999/uart-controler-tb">
             <img class="card-img" src="assets/uart.png" alt="UART TX/RX Core" />
+			</a>
             <div class="card-img-placeholder">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
               <span>// add project image</span>
@@ -268,18 +312,19 @@
           <div class="card-top">
             <div class="card-icon">UART</div>
             <div class="card-links">
-              <a class="card-link" href="https://github.com/CowMan999" target="_blank" rel="noopener" title="GitHub">
+              <a class="card-link" href="https://github.com/CowMan999/uart-controler-tb" target="_blank" rel="noopener" title="GitHub">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
               </a>
             </div>
           </div>
-          <div class="card-title">UART TX/RX Core</div>
+          <div class="card-title">UART Controler & Testbench</div>
           <div class="card-date">SystemVerilog · Vivado · Testbench — In Progress</div>
           <div class="card-desc">Synthesizable UART transmitter and receiver in SystemVerilog with independent baud and 16x oversampling clock generation. Self-checking loopback testbench with randomized byte generation catches framing and timing errors. Found and fixed several multiple-driver and race-condition bugs across always_ff blocks during RTL review.</div>
           <div class="card-tags">
             <span class="card-tag">SystemVerilog</span><span class="card-tag">UART</span><span class="card-tag">RTL Design</span><span class="card-tag">Vivado</span><span class="card-tag">Testbenches</span>
           </div>
-        </div>
+		  
+        </div> 
 
         <!-- ── ESP32 Offline Map Display ── -->
         <div class="project-card reveal reveal-delay-2">
@@ -321,7 +366,6 @@
       </div>
       <div class="awards-grid reveal reveal-delay-1">
         <div class="award-card">
-          <div class="award-mark">01</div>
           <div>
             <div class="award-title">McMaster Undergraduate Scholarship</div>
             <div class="award-sub">McMaster University · Faculty of Engineering</div>
@@ -329,7 +373,6 @@
           </div>
         </div>
         <div class="award-card">
-          <div class="award-mark">02</div>
           <div>
             <div class="award-title">Canadian Computing Competition</div>
             <div class="award-sub">University of Waterloo · 2024 &amp; 2025</div>
@@ -337,7 +380,6 @@
           </div>
         </div>
         <div class="award-card">
-          <div class="award-mark">03</div>
           <div>
             <div class="award-title">Canadian Senior Mathematics Competition</div>
             <div class="award-sub">University of Waterloo · 2024</div>
@@ -393,7 +435,6 @@
   <!-- ── FOOTER ── -->
   <footer>
     <div class="container footer-inner">
-      <div class="footer-copy">© 2026 <span>Edward Mayen</span></div>
       <div class="footer-links">
         <a href="#hero">Top</a>
         <a href="#about">About</a>
@@ -407,12 +448,53 @@
 </div>
 
 <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bg = document.querySelector('.parallax-bg');
+  if (!bg) return;
+
+  // Get the CSS variables
+  const styles = getComputedStyle(document.documentElement);
+  
+  // Helper to grab color and encode the '#' symbol for the data URI
+  const getColor = (varName) => styles.getPropertyValue(varName).trim().replace('#', '%23');
+
+  const c1 = getColor('--parallax-color-1') || '%231f1d26';
+  const c2 = getColor('--parallax-color-2') || '%2325232d';
+  const c3 = getColor('--parallax-color-3') || '%232c2936';
+
+  // The SVG string with template literals for the colors
+  const svg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='840' height='840' viewBox='0 0 840 840'%3E%3Cdefs%3E%3Cstyle%3E.tri%7Bfill:${c1}%7D.tri2%7Bfill:${c2};fill-opacity:0.8%7D.tri3%7Bfill:${c3}%7D%3C/style%3E%3C/defs%3E%3Cpath class='tri' d='M420 0L840 420H0z'/%3E%3Cpath class='tri2' d='M0 420l420 420V420z'/%3E%3Cpath class='tri' d='M420 840L840 420v420z'/%3E%3Cpath class='tri3' d='M105 315l105 105-105 105z'/%3E%3Cpath class='tri' d='M210 105l105 105-105 105z'/%3E%3Cpath class='tri2' d='M525 525l157.5 157.5-157.5 157.5z'/%3E%3Cpath class='tri3' d='M735 105l105 105-105 105z'/%3E%3Cpath class='tri2' d='M210 630l157.5 157.5-157.5 157.5z'/%3E%3Cpath class='tri' d='M630 105l105 105-105 105z'/%3E%3Cpath class='tri3' d='M0 210l105 105H0z'/%3E%3Cpath class='tri2' d='M420 210l105 105-105 105z'/%3E%3Cpath class='tri' d='M735 315l105 105H735 z'/%3E%3Cpath class='tri3' d='M420 420l105 105-105 105z'/%3E%3Cpath class='tri2' d='M0 840l105-105-105 105z'/%3E%3Cpath class='tri' d='M630 630l157.5 157.5-157.5 157.5z'/%3E%3C/svg%3E`;
+
+  // Apply to the div
+  bg.style.backgroundImage = `url("${svg}")`;
+});
+
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const bg = document.querySelector('.parallax-bg');
     if (bg) {
       // Shifts the background image vertically at a slower rate for true infinite parallax
       bg.style.backgroundPosition = `0 ${scrollY * 0.7}px`;
+    }
+	const stripes = document.querySelector('.stripe-bg');
+	if (stripes) {
+	stripes.style.backgroundPosition = `0 ${scrollY * 0.4}px`;
+	}
+
+    const waveform = document.querySelector('.parallax-waveform');
+    if (waveform) {
+		// Calculate the horizontal shift based on scroll
+ 			 const shift = scrollY * 0.25;
+  
+		  // Apply the shift to BOTH background layers
+		  // Top layer starts at 0px X, Bottom layer starts at -350px X
+ 		 waveform.style.backgroundPosition = `${shift}px 15%, ${-350 + shift}px 95%`;
+    }
+    const circuit = document.querySelector('.parallax-circuit');
+    if (circuit) {
+      // Slowest layer, drifts the opposite vertical direction for depth
+      circuit.style.backgroundPosition = `0 ${-scrollY * 0.15}px`;
     }
   });
 </script>
@@ -435,9 +517,9 @@
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
     // Hide image element when src is missing/broken, show placeholder
-    document.querySelectorAll('.card-img').forEach(img => {
-      const wrap = img.closest('.card-img-wrap');
-      const placeholder = wrap.querySelector('.card-img-placeholder');
+    document.querySelectorAll('.card-img, .hero-img, .about-img').forEach(img => {
+      const wrap = img.closest('.card-img-wrap, .hero-img-wrap, .about-img-wrap');
+      const placeholder = wrap.querySelector('.card-img-placeholder, .hero-img-placeholder, .about-img-placeholder');
       const toggle = () => {
         const hasImg = img.complete && img.naturalWidth > 0;
         img.style.display = hasImg ? 'block' : 'none';
