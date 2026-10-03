@@ -8,7 +8,7 @@ ACCENT COLOR — change this one value to retheme everything
 :root {
   /* Deepened the mint so it's readable on light backgrounds */
   /* Kept the original neon mint feel, but made it more cohesive */
-  --accent: #c44ae9;
+  --accent: #4992d6;
   --accent-dim:   color-mix(in srgb, var(--accent) 25%, transparent);
   --accent-faint: color-mix(in srgb, var(--accent) 8%, transparent);
   --accent-mid:   color-mix(in srgb, var(--accent) 45%, transparent);
