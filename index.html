@@ -203,14 +203,13 @@
               <div class="exp-role">Hardware Validation & Test Engineering Co-op</div>
               <div class="exp-org">HealthHub Solutions <span class="exp-loc">· Milton, ON</span></div>
             </div>
-            <div class="exp-date">Jun 2025 — Aug 2025</div>
+            <div class="exp-date">Jun 2026 — Aug 2026</div>
           </div>
           <ul class="exp-bullets">
-            <li>Diagnosed and repaired defective bedside patient entertainment systems by replacing and resoldering internal PCB components.</li>
-            <li>Tested repaired units and verified functionality against structured validation procedures prior to redeployment.</li>
-            <li>Flashed and modified onboard Linux-based firmware to keep devices on current, compatible software builds.</li>
-            <li>Used custom electrical test jigs, oscilloscopes, and multimeters to isolate and verify functionality of individual internal components.</li>
-            <li>Wrote a Python script to automate testing of channel banks on a coax-based distribution system, streamlining QA across many units.</li>
+            <li>Engineered a custom Python testing framework for RF coax channel bank validation and performed RJ12 control-line testing to verify signal integrity, streamlining QA across <strong>400+ deployment units</strong>.</li>
+            <li>Isolated hardware failures on defective PCB assemblies using oscilloscopes and diagnostic test jigs, performing micro-soldering component repairs to restore system validation compliance.</li>
+            <li>Validated core board functionality including I/O, USB, audio, and display subsystems, and flashed / configured Arch Linux based firmware using systemd and GRUB to ensure compliance with current builds.</li>
+            <li>Flashed &amp; debugged x86 BIOS firmware present on the systems, inspecting BIOS dumps via hex editors and serial console output to isolate corrupted firmware regions and restore boot compliance across affected units.</li>
           </ul>
           <div class="exp-tags">
             <span class="card-tag">PCB Repair</span><span class="card-tag">Soldering</span><span class="card-tag">Linux Firmware</span><span class="card-tag">Oscilloscope</span><span class="card-tag">Python</span><span class="card-tag">QA</span>
@@ -226,10 +225,10 @@
             <div class="exp-date">Oct 2025 — Present</div>
           </div>
           <ul class="exp-bullets">
-            <li>Designed a hardware-in-the-loop (HIL) test setup using an Arduino to generate simulated primary/rear RPM sensor pulses, feeding realistic signals into the main board to validate firmware without requiring the full vehicle.</li>
-            <li>Redesigned the vehicle's PCB layout in Altium Designer, achieving a <strong>19% reduction</strong> in spatial footprint.</li>
-            <li>Engineered deterministic C++ firmware for a Teensy-based PCB to capture high-frequency sensor data, improving system reliability and filtering data outliers.</li>
-            <li>Architected a TypeScript and Java telemetry pipeline for real-time sensor data modelling and visualization.</li>
+            <li>Designed a Hardware-in-the-Loop (HIL) simulator to inject signal faults and simulate high-frequency RPM data, validating off-vehicle firmware fault-recovery routines and expected operation.</li>
+            <li>Redesigned the vehicle's PCB layout utilizing Altium Designer, achieving a <strong>19% reduction</strong> in spatial footprint.</li>
+            <li>Debugged and improved interrupt-driven C++ firmware for sensor data acquisition, increasing system reliability through outlier filtering.</li>
+            <li>Developed a Java based telemetry tool with a TypeScript frontend for sensor data modelling and visualization, managed via Git.</li>
           </ul>
           <div class="exp-tags">
             <span class="card-tag">C++</span><span class="card-tag">Arduino</span><span class="card-tag">Teensy</span><span class="card-tag">Altium</span><span class="card-tag">PCB Design</span><span class="card-tag">TypeScript</span><span class="card-tag">Java</span>
@@ -246,8 +245,8 @@
             <div class="exp-date">Sep 2023 — Feb 2025</div>
           </div>
           <ul class="exp-bullets">
-            <li>Designed and tuned an 8-motor C++ control system, implementing custom PID loops and input handling to hold 2cm positional accuracy and 1° heading precision.</li>
-            <li>Developed autonomous routines using sensor-driven coordinate tracking, securing a <strong>Top 20</strong> placement at provincial-level competitions.</li>
+            <li>Designed and tuned an 8-motor C++ control system, implementing custom PID loops and input handling to ensure 2cm positional accuracy and 1° heading precision.</li>
+            <li>Developed autonomous routines utilizing sensor-driven coordinate tracking, securing a <strong>Top 20</strong> placement at provincial-level competitions.</li>
             <li>Mentored 15 junior developers, qualifying Jr. teams for <strong>two consecutive</strong> Ontario Provincial Championships.</li>
           </ul>
           <div class="exp-tags">
@@ -289,7 +288,7 @@
           <div class="card-body">
             <div class="card-date">SystemVerilog · Vivado · Testbench — Aug 2026</div>
             <div class="card-title">Single-Cycle RISC-V CPU</div>
-            <div class="card-desc">Single-cycle RV32I CPU core in SystemVerilog — ALU, control unit, register file, and memory interfaces built to the RV32I ISA spec. Verified with self-checking testbenches against custom assembly programs, debugged in Vivado through waveform analysis.</div>
+            <div class="card-desc">Designed a single-cycle RISC-V (RV32I) CPU core in SystemVerilog, architecting the ALU, control unit, register file, and memory interfaces to RV32I ISA specifications. Built a self-checking testbench combining SystemVerilog Assertions (SVA) with a Python golden reference model and constrained-random instruction generation, catching functional bugs including an inferred-latch bug that aliased SRLI/SRAI and an unmasked JALR target address. Synthesized and implemented the RTL onto a Xilinx Zynq-7020 SoC using Vivado, closing timing at 50MHz with +4.08 ns worst negative slack.</div>
             <div class="card-tags">
               <span class="card-tag">SystemVerilog</span><span class="card-tag">RISC-V</span><span class="card-tag">RTL Design</span><span class="card-tag">Vivado</span><span class="card-tag">Testbenches</span>
             </div>
@@ -339,7 +338,7 @@
           <div class="card-body">
             <div class="card-date">PCB Design · Sensor Analytics — Feb 2026</div>
             <div class="card-title">ESP32 Offline Map Display</div>
-            <div class="card-desc">ESP32-based navigation system on a custom KiCad PCB built for a minimized form factor. SPI, I²C, and serial peripheral communication drives a TFT LCD rendering real-time offline maps at 5Hz with 2-meter geospatial accuracy. Neo M8 GPS module and SD card storage handle interrupt-driven geolocation telemetry and OpenStreetMap data.</div>
+            <div class="card-desc">Designed a KiCad PCB integrating an ESP32, Neo M8 GPS (UART), and TFT LCD (SPI) with optimized trace routing for noise immunity. Engineered C++ firmware with custom memory allocation to render vector maps from SD storage, maintaining a 5Hz update rate in SRAM.</div>
             <div class="card-tags">
               <span class="card-tag">ESP32</span><span class="card-tag">KiCad</span><span class="card-tag">SPI / I²C</span><span class="card-tag">GPS</span><span class="card-tag">TFT LCD</span>
             </div>
@@ -357,7 +356,7 @@
     <div class="container">
       <div class="reveal" style="margin-bottom:36px">
         <div class="section-label">Awards</div>
-        <h2 class="section-title" style="font-size:clamp(1.6rem,3.5vw,2.2rem)">Recognition.</h2>
+        <h2 class="section-title">Recognition.</h2>
       </div>
       <div class="awards-grid reveal reveal-delay-1">
         <div class="award-card">
